@@ -1,0 +1,16 @@
+<html>
+<body>
+    <div class="container">
+        <h3>Articles</h3>
+        <%  for (let artcl of articles){ %> %>
+        <div>
+            <h4><%= artcl.artcl_title %></h4>
+            <a href="<%= artcl.img_path %>">go to img</a>
+            <img src="data:image/png;base64, <%= artcl.img_path %>" alt="Article image" />
+            <img src="<%= artcl.img_path %>" alt="">
+            
+        </div>
+        <% } %>
+    </div>
+</body>
+</html>
